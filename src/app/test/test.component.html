@@ -1,0 +1,64 @@
+<div class="container parentcontainer">
+  <div class="row justify-content-center">
+
+      <div class="col  d-none d-lg-block" style="width: 10px; height: 70px; padding-top: 50px;" >
+          <div class="card">
+              <h5 class="card-header">Plan Journey</h5>
+              <div class="card-body">
+                  <form [formGroup]="journeyInfo" (ngSubmit)="onSubmit()">
+                      <div class="form-row">
+                          <div class="form-group col">
+                              <label for="sourceLocation">Select Room</label>
+                              <select class="form-control" id="sourceLocation" name="sourceLocation" formControlName="sourceLocation">
+                                  <option *ngFor='let city of sourceCities' [value]="city">{{city}}</option>
+                              </select>
+                              <div *ngIf="formControl.sourceLocation.invalid && (formControl.sourceLocation.dirty || formControl.sourceLocation.touched || submitted)" class="text-danger">
+                                  <small *ngIf="formControl.sourceLocation.errors?.required">Select Room is required</small>
+                              </div>
+                          </div>
+
+                      <div class="form-row ">
+                          <div class="form-group col">
+                              <label for="depatureDate">Booking Date</label>
+                              <input class="form-control" id="departureDate" name="departureDate" type="date" formControlName="departureDate">
+                              <div *ngIf="formControl.departureDate.invalid && (formControl.departureDate.dirty || formControl.departureDate.touched || submitted)" class="text-danger">
+                                  <small *ngIf="formControl.departureDate.errors?.required">Booking date is required</small>
+                                  <small *ngIf="formControl.departureDate.errors?.oldDate">Booking date is Invalid.(Do not enter old date)</small>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                      <div class="row justify-content-center">
+                          <button type="submit" class="btn btn-primary justify-content-center" style="width:200px;">Search</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<hostel-footer></hostel-footer>
+
+

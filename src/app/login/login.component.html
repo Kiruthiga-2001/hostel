@@ -1,0 +1,50 @@
+<div class="container">
+  <div clss="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1 style="color:#fff;margin-top:10px">LOGIN HERE</h1>
+        </div>
+        <form [formGroup]="loginForm" (ngSubmit)= "login()">
+            <div class="mb-3">
+              <label style="color:#fff;margin-top:10px" for="exampleInputEmail1" class="form-label">EMAILID:</label>
+              <input formControlName="email" [ngClass]="{'is-invalid':submitted && loginForm.controls['email'].errors}"type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <br>
+            <div *ngIf="submitted && loginForm.controls['email'].errors" class="text-danger">
+              <div *ngIf="submitted && loginForm.controls['email'].errors['required']">
+              EMAILID is required
+                   </div>
+             <div **ngIf="submitted && registerForm.controls['email'].errors['email']">
+              EMAILID is not valid
+             </div>
+            </div>
+            </div>
+            <div class="mb-3">
+              <label style="color:#fff;margin-top:10px" for="exampleInputPassword1" class="form-label">PASSWORD:</label>
+              <input formControlName="password"[ngClass]="{'is-invalid':submitted && loginForm.controls['password'].errors}"  type="password" class="form-control" id="exampleInputPassword1">
+          <br>
+          <div *ngIf="submitted && loginForm.controls['password'].errors" class="text-danger">
+            <div *ngIf="submitted && loginForm.controls['password'].errors['required']">
+            PASSWORD is required
+            </div>
+            <div **ngIf="submitted && registerForm.controls['password'].errors['password']">
+              PASSWORD should be atleast 8 characters
+             </div>
+
+          </div>
+          <button type="submit" class="btn btn-primary">login</button>
+          </div>
+          </form>
+
+
+          <a style="color:#fff;margin-top:10px" routerLink="/register">NEW USER ? CLICK TO REGISTER !</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <hostel-footer></hostel-footer>
+

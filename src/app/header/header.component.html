@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" *ngIf="!isUserLogin && !isAdminLogin">
+  <a class="navbar-brand text-light" routerLink="/dashboard"> {{title}} </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent" *ngIf="!isUserLogin && !isAdminLogin">
+    <ul class="navbar-nav mr-auto" *ngIf="!isUserLogin && !isAdminLogin">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/hostel-detail" routerLinkActive="active">Hostel Detail</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contactUs" routerLinkActive="active">Contact Us</a>
+        </li>
+    </ul>
+    <button  type="button" routerLink="/register" routerLinkActive="active" class="btn btn-outline-success mx-2"*ngIf="!isUserLogin && !isAdminLogin">SIGN UP<i class="fas fa-sign-in-alt"></i></button>
+
+</div>
+</nav>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" *ngIf="isUserLogin && !isAdminLogin">
+  <a class="navbar-brand text-light" routerLink="/home"> {{title}} </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent" *ngIf="isUserLogin && !isAdminLogin">
+    <ul class="navbar-nav mr-auto" *ngIf="isUserLogin && !isAdminLogin">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/search" routerLinkActive="active">Book Rooms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pricing" routerLinkActive="active">Pricing</a>
+        </li>
+    </ul>
+    <button  type="button" routerLink="/register" routerLinkActive="active" class="btn btn-outline-success mx-2"*ngIf="isUserLogin && !isAdminLogin">Logout <i class="fas fa-sign-in-alt"></i></button>
+
+</div>
+</nav>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" *ngIf="!isUserLogin && isAdminLogin">
+  <a class="navbar-brand text-light" routerLink="/admin"> {{title}} </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent" *ngIf="!isUserLogin && isAdminLogin">
+    <ul class="navbar-nav mr-auto" *ngIf="!isUserLogin && isAdminLogin">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/alloct" routerLinkActive="active">Room Allotments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pricing" routerLinkActive="active">Add & Delete Rooms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/account" routerLinkActive="active">View student</a>
+        </li>
+    </ul>
+    <button  type="button" routerLink="/register" routerLinkActive="active" class="btn btn-outline-success mx-2"*ngIf="!isUserLogin && isAdminLogin">Logout <i class="fas fa-sign-in-alt"></i></button>
+
+</div>
+</nav>
+

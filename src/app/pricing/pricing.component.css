@@ -1,0 +1,29 @@
+
+#pricing {
+  background-color: #B3E8E5;
+}
+#pricing {
+  text-align: center;
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.btn-price {
+  background-color: #4c8d8a;
+  color: #fff;
+}
+
+.btn-price:hover {
+  background-color: #005555;
+  /* color: #fff; */
+}
+
+h2 {
+  font-family: 'Mulish', sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 700;
+}

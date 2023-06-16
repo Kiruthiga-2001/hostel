@@ -1,0 +1,83 @@
+{
+  "register": [
+    {
+      "name": "suryakumar",
+      "email": "surya@gmail.com",
+      "mobile": 6382421795,
+      "password": "Surya@123",
+      "id": 7
+    },
+    {
+      "name": "kiruthi",
+      "email": "kiruthi@gmail.com",
+      "mobile": 9578851425,
+      "password": "Kiru@2001",
+      "id": 8
+    },
+    {
+      "name": "kiruthi",
+      "email": "kiruthi@gmail.com",
+      "mobile": 9578851425,
+      "password": "Kiru@567",
+      "id": 9
+    },
+    {
+      "name": "selvarani",
+      "email": "selva@gmakil.com",
+      "mobile": 8760184380,
+      "password": "Selva@123",
+      "id": 10
+    }
+  ],
+  "booking": [
+    {
+      "roomtype": "",
+      "id": 1
+    },
+    {
+      "roomtype": null,
+      "id": 2
+    },
+    {
+      "roomtype": null,
+      "id": 3
+    },
+    {
+      "roomtype": null,
+      "id": 4
+    },
+    {
+      "roomtype": null,
+      "id": 5
+    },
+    {
+      "roomtype": null,
+      "id": 6
+    },
+    {
+      "roomtype": null,
+      "id": 7
+    },
+    {
+      "roomtype": null,
+      "id": 8
+    },
+    {
+      "roomtype": null,
+      "id": 9
+    },
+    {
+      "roomtype": null,
+      "id": 10
+    }
+  ],
+  "admin": [
+    {
+      "name": "kiruthiga.M",
+      "email": "admin@gmail.com",
+      "mobile": 9578851425,
+      "password": "Admin@123",
+      "id": 1
+    }
+  ]
+}

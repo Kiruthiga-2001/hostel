@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <img class="image" src="../../assets/images/register.jpg" >
+    </div>
+    <div class="col-6">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1 style="color:#fff;margin-top:10px">REGISTER HERE</h1>
+        </div>
+        <form [formGroup]="registerForm" (ngSubmit)="register()">
+
+          <div class="mb-3">
+              <label style="color:#fff;margin-top:10px" class="form-label">NAME:</label>
+              <input formControlName="name" [ngClass]="{'is-invalid':submitted && registerForm.controls['name'].errors}"  class="form-control"  placeholder="enter name" type="text"  >
+              <div *ngIf="submitted && registerForm.controls['name'].errors" class="text-danger">
+                <div *ngIf="submitted && registerForm.controls['name'].errors['required']">
+                NAME is required
+                </div>
+
+              </div>
+            </div>
+            <div class="mb-3">
+              <label style="color:#fff;margin-top:10px" class="form-label">EMAILID:</label>
+              <input formControlName="email"[ngClass]="{'is-invalid':submitted && registerForm.controls['email'].errors}"   placeholder="enter email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div *ngIf="submitted && registerForm.controls['email'].errors" class="text-danger">
+                <div *ngIf="submitted && registerForm.controls['email'].errors['required']">
+                EMAILID is required
+                     </div>
+               <div **ngIf="submitted && registerForm.controls['email'].errors['email']">
+                EMAILID is not valid
+               </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label  style="color:#fff;margin-top:10px"class="form-label">MOBILE:</label>
+              <input formControlName="mobile"[ngClass]="{'is-invalid':submitted && registerForm.controls['mobile'].errors}" placeholder="enter mobile" type="number" class="form-control" id="exampleInputmobile" >
+              <div *ngIf="submitted && registerForm.controls['mobile'].errors" class="text-danger">
+                <div *ngIf="submitted && registerForm.controls['mobile'].errors['required']">
+                MOBILE is required
+                </div>
+
+              </div>
+            </div>
+            <div class="mb-3">
+              <label style="color:#fff;margin-top:10px" class="form-label">PASSWORD:</label>
+              <input formControlName="password" [ngClass]="{'is-invalid':submitted && registerForm.controls['password'].errors}" placeholder="enter password" type="password" class="form-control" id="exampleInputPassword1">
+              <div *ngIf="submitted && registerForm.controls['password'].errors" class="text-danger">
+                <div *ngIf="submitted && registerForm.controls['password'].errors['required']">
+                PASSWORD is required
+                </div>
+                <div **ngIf="submitted && registerForm.controls['password'].errors['password']">
+                  PASSWORD should be atleast 8 characters
+                 </div>
+
+              </div>
+            </div>
+           <br>
+            <button type="submit" class="btn btn-primary mb-2">REGISTER</button>
+          </form>
+          <a style="color:#fff;margin-top:10px" routerLink="/login">ALREADY MEMBER ?CLICK TO LOGIN !</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hostel-footer></hostel-footer>
+
+

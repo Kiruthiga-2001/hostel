@@ -1,0 +1,300 @@
+[
+  {
+      "id": 1,
+      "Room Name":"AC ROOMS",
+      "Source":"AC ROOMS",
+      "Fare":11000,
+      "Room Number":"1",
+      "Room Type":"AC",
+      "Seats Available": 4,
+      "bookings":{ }
+  },
+  {
+    "id": 2,
+    "Room Name":"AC ROOMS",
+    "Source":"AC ROOMS",
+    "Fare":11000,
+    "Room Number":"2",
+    "Room Type":" AC",
+    "Seats Available": 4,
+    "bookings":{ }
+},
+{
+  "id":3,
+  "Room Name":"AC ROOMS",
+  "Source":"AC ROOMS",
+  "Fare":11000,
+  "Room Number":"3",
+  "Room Type":"AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id": 4,
+  "Room Name":"AC ROOMS",
+  "Source":"AC ROOMS",
+  "Fare":11000,
+  "Room Number":"4",
+  "Room Type":"AC",
+  "Seats Available": 4,
+  "bookings":{ }
+},
+{
+  "id":5,
+  "Room Name":"AC ROOMS",
+  "Source":"AC ROOMS",
+  "Fare":11000,
+  "Room Number":"5",
+  "Room Type":"AC",
+  "Seats Available": 4,
+  "bookings":{ }
+},
+{
+  "id":6,
+  "Room Name":"AC ROOMS",
+  "Source":"AC ROOMS",
+  "Fare":11000,
+  "Room Number":"6",
+  "Room Type":"Non AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":7,
+  "Room Name":"AC ROOMS",
+  "Source":"AC ROOMS",
+  "Fare":11000,
+  "Room Number":"7",
+  "Room Type":"AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":8,
+  "Room Name":"AC ROOMS",
+  "Source":"AC ROOMS",
+  "Fare":11000,
+  "Room Number":"8",
+  "Room Type":"AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id": 9,
+  "Room Name":"AC ROOMS",
+  "Source":"AC ROOMS",
+  "Fare":11000,
+  "Room Number":"9",
+  "Room Type":"AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":10,
+  "Room Name":"AC ROOMS",
+  "Source":"AC ROOMS",
+  "Fare":11000,
+  "Room Number":"10",
+  "Room Type":"AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":11,
+  "Room Name":"NON-AC ROOMS",
+  "Source":"NON-AC ROOMS",
+  "Fare":9000,
+  "Room Number":"11",
+  "Room Type":"Non-AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":12,
+  "Room Name":"NON-AC ROOMS",
+  "Source":"NON-AC ROOMS",
+  "Fare":9000,
+  "Room Number":"12",
+  "Room Type":"Non-AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":13,
+  "Room Name":"NON-AC ROOMS",
+  "Source":"NON-AC ROOMS",
+  "Fare":9000,
+  "Room Number":"13",
+  "Room Type":"Non-AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":14,
+  "Room Name":"NON-AC ROOMS",
+  "Source":"NON-AC ROOMS",
+  "Fare":9000,
+  "Room Number":"14",
+  "Room Type":"Non-AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":15,
+  "Room Name":"NON-AC ROOMS",
+  "Source":"NON-AC ROOMS",
+  "Fare":9000,
+  "Room Number":"15",
+  "Room Type":"Non-AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":16,
+  "Room Name":"NON-AC ROOMS",
+  "Source":"NON-AC ROOMS",
+  "Fare":9000,
+  "Room Number":"16",
+  "Room Type":"Non-AC",
+  "Seats Available":4,
+  "bookings":{ }
+},{
+  "id":17,
+  "Room Name":"NON-AC ROOMS",
+  "Source":"NON-AC ROOMS",
+  "Fare":9000,
+  "Room Number":"17",
+  "Room Type":"Non-AC",
+  "Seats Available":4,
+  "bookings":{ }
+},{
+  "id":18,
+  "Room Name":"NON-AC ROOMS",
+  "Source":"NON-AC ROOMS",
+  "Fare":9000,
+  "Room Number":"18",
+  "Room Type":"Non-AC",
+  "Seats Available":4,
+  "bookings":{ }
+},{
+  "id":19,
+  "Room Name":"NON-AC ROOMS",
+  "Source":"NON-AC ROOMS",
+  "Fare":9000,
+  "Room Number":"19",
+  "Room Type":"Non-AC",
+  "Seats Available":4,
+  "bookings":{ }
+},{
+  "id":20,
+  "Room Name":"NON-AC ROOMS",
+  "Source":"NON-AC ROOMS",
+  "Fare":9000,
+  "Room Number":"20",
+  "Room Type":"Non-AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":21,
+  "Room Name":"NORMAL ROOMS",
+  "Source":"NORMAL ROOMS",
+  "Fare":5000,
+  "Room Number":"21",
+  "Room Type":"Non-AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":22,
+  "Room Name":"NORMAL ROOMS",
+  "Source":"NORMAL ROOMS",
+  "Fare":5000,
+  "Room Number":"22",
+  "Room Type":"Non AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":23,
+  "Room Name":"NORMAL ROOMS",
+  "Source":"NORMAL ROOMS",
+  "Fare":5000,
+  "Room Number":"23",
+  "Room Type":"Non AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":24,
+  "Room Name":"NORMAL ROOMS",
+  "Source":"NORMAL ROOMS",
+  "Fare":5000,
+  "Room Number":"24",
+  "Room Type":"Non AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":25,
+  "Room Name":"NORMAL ROOMS",
+  "Source":"NORMAL ROOMS",
+  "Fare":5000,
+  "Room Number":"25",
+  "Room Type":"Non AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":26,
+  "Room Name":"NORMAL ROOMS",
+  "Source":"NORMAL ROOMS",
+  "Fare":5000,
+  "Room Number":"26",
+  "Room Type":"Non AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":27,
+  "Room Name":"NORMAL ROOMS",
+  "Source":"NORMAL ROOMS",
+  "Fare":5000,
+  "Room Number":"27",
+  "Room Type":"Non AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":28,
+  "Room Name":"NORMAL ROOMS",
+  "Source":"NORMAL ROOMS",
+  "Fare":5000,
+  "Room Number":"28",
+  "Room Type":"Non AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":29,
+  "Room Name":"NORMAL ROOMS",
+  "Source":"NORMAL ROOMS",
+  "Fare":5000,
+  "Room Number":"29",
+  "Room Type":"Non AC",
+  "Seats Available":4,
+  "bookings":{ }
+},
+{
+  "id":30,
+  "Room Name":"NORMAL ROOMS",
+  "Source":"NORMAL ROOMS",
+  "Fare":5000,
+  "Room Number":"30",
+  "Room Type":"Non AC",
+  "Seats Available":4,
+  "bookings":{ }
+}]
+
+
+

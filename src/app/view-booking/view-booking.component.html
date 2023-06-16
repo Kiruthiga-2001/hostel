@@ -1,0 +1,71 @@
+<div class="container parentcontainer">
+  <div class="row justify-content-center" *ngIf="ticket">
+      <div class="col col-lg-8 col-md-10 col-sm-12 ticket">
+              <div class="row heading my-2">
+                  <div class="col">Online Room Booking</div>
+              </div>
+              <div class="row route my-2 mx-1 py-2">
+                  <div class="col">
+                      <h5 class="endpoints">{{ticket['Source']}}</h5>
+                  </div>
+                  <div class="col">
+                      <h5>{{ticket['Date'] | date: 'mediumDate'}}</h5>
+                  </div>
+              </div>
+              <div class="row my-3 mx-1 passenger pt-2">
+                  <div class="col-md-4 col-sm-6">
+                      <h5>Person Details</h5>
+                      <h3 class="passengername">{{ticket['Passenger Details']['username']}}</h3>
+                      <p>{{ticket['Passenger Details']['mobilenumber']}}  <br>{{ticket['Passenger Details']['email']}}</p>
+                      <p>{{ticket['Passenger Details']['aatharnumber']}}</p>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                      <h5>Ticket Id</h5>
+                      <p>{{ticket['id']}}</p>
+                  </div>
+
+                  <div class="col-md-2 col-sm-6">
+                      <h5>Seat No</h5>
+                      <p><span *ngFor="let seat of ticket['Seat No']">
+                          {{seat}}
+                        </span></p>
+                  </div>
+
+                  <div class="col-md-2 col-sm-6">
+                      <h5>Total Fare</h5>
+                      <p>{{ticket['Total Fare'] | currency: 'INR'}}</p>
+                  </div>
+
+              </div>
+
+              <div class="row my-3 mx-1 passenger pt-2">
+                  <div class="col-md-4 col-sm-6">
+                      <h5>Room Name</h5>
+                      <p>{{ticket['Room Name']}} <br> {{ticket['Room Type']}}</p>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                      <h5>Reporting Date</h5>
+                      <p>Before 1 week</p>
+                  </div>
+
+
+              </div>
+      </div>
+  </div>
+  <div class="row my-3">
+      <div class="mx-auto condition">**Please bring this copy to hostel for confirmation the room</div>
+  </div>
+  <div class="row my-3">
+      <div class="mx-auto">
+          <button class="btn btn-primary" routerLink="">Book more Rooms</button>
+      </div>
+  </div>
+
+</div>
+
+
+
+<hostel-footer></hostel-footer>
+
